@@ -1,10 +1,10 @@
 <?php
 
-$person = [
-    'name' => 'Arnel Forbes',
-    'age' => 29,
-    'hair' => 'Black',
-    'career' => 'Web Developer'
+$task = [
+    'title' => 'Learn PHP',
+    'due' => 'Today',
+    'assigned_to' => 'Arnel',
+    'completed' => false
 ];
 
 // die(var_dump($person));
