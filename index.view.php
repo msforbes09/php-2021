@@ -6,21 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Php Lessons</title>
-    <style>
-        header {
-            background-color: #e3e3e3;
-            padding: 2em;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
-    <header>
-        <h1>
-            <?= $greetings; ?>
-        </h1>
-    </header>
+    <ul>
+        <?php foreach ($names as $name) : ?>
+            <li><?= $name?></li>
+        <?php endforeach ?>
+    </ul>
 </body>
 
 </html>

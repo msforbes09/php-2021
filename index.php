@@ -1,6 +1,9 @@
 <?php
 
-$name = htmlspecialchars(ucfirst(strtolower($_GET['name'])));
-$greetings = "Hello, {$name}";
+$names = [
+    'John',
+    'Jane',
+    'Jeff',
+];
 
 require 'index.view.php';
