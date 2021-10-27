@@ -10,9 +10,9 @@
 
 <body>
     <ul>
-        <?php foreach ($names as $name) : ?>
-            <li><?= $name?></li>
-        <?php endforeach ?>
+        <?php foreach ($person as $attr => $value) : ?>
+            <li><strong><?= $attr; ?>:</strong>  <?= $value; ?></li>
+        <?php endforeach; ?>
     </ul>
 </body>
 
