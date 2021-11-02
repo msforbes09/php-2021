@@ -1,12 +1,5 @@
 <?php
 
-$task = [
-    'title' => 'Learn PHP',
-    'due' => 'Today',
-    'assigned_to' => 'Arnel',
-    'completed' => false
-];
+require 'functions.php';
 
-// die(var_dump($person));
-
-require 'index.view.php';
+dd(checkAge(17));
