@@ -14,8 +14,16 @@
     <ul>
         <li><strong>Name: </strong><?= $task['title']; ?></li>
         <li><strong>Due Date: </strong><?= $task['due']; ?></li>
-        <li><strong>Assigned To: </strong><?= $task['assigned_to']; ?></li>
-        <li><strong>Status: </strong> <?= $task['completed'] ? 'Complete' : 'Incomplete' ?></li>
+        <li><strong>Person Responsible: </strong><?= $task['assigned_to']; ?></li>
+        <li>
+            <strong>Status: </strong>
+            
+            <?php if ($task['completed']) : ?>
+                <span>&#9989;</span>
+            <?php else : ?>
+                <span>&#10062;</span>
+            <?php endif; ?>
+        </li>
     </ul>
 </body>
 
